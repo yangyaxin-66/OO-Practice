@@ -1,14 +1,10 @@
 ﻿using System;
 namespace OOPractice
 {
-    public class Car
+    public class Car : CarBase
     {
-        public string Name { get; set; }
-        public int Speed { get; set; }
-
-        public string SpeedUp()
+        public Car(string name, int speed) : base(name, speed)
         {
-            return $"{Name}:speed up {Speed} km/h";
         }
     }
 }
